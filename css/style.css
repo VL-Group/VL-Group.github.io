@@ -1,0 +1,177 @@
+  .col-lg-2{
+    width:30%;
+    height: 200px;
+  }
+  .col-lg-2 > img{
+    margin:auto;
+  }
+  .col-lg-9{
+    width:70%;
+  }
+
+  h2{
+    counter-reset: paper;
+  }
+
+  h4::before{
+    counter-increment: paper;
+    content:counter(paper)". ";
+  }
+
+  blockquote{
+    border-left: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  #gridid img{
+    margin: 0 auto;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    max-height: 180px;
+    max-width: 100%;
+    border:none;
+    border-radius: 0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+section h2 {
+  font-family: Trebuchet MS, snas-serif;
+  line-height: 1.1;
+  color: #4D3B3B;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+  
+section h4 {
+  font-family: Candara, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 1px;
+  margin-bottom: 1px
+  /*text-transform: uppercase;*/
+  }
+
+section p {
+    font-size: 15px;
+    padding: 0;
+    color: #777;
+    line-height: 1.8em;
+    margin: 0.2em 0 0 0;}
+
+
+    @media (max-width: 640px) {
+.col-lg-12{
+  padding: 0;
+  margin: 0 auto;
+}
+.col-lg-2{
+  padding: 0 4px;
+  width: 40%;
+  height: 200px;
+}
+.col-lg-9{
+  padding: 0 4px;
+  width: 60%;
+}
+  
+section h2 {
+  font-family: Trebuchet MS, snas-serif;
+  line-height: 1.1;
+  color: #4D3B3B;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 16px;
+  margin-bottom: 10px; }
+
+  
+section h4 {
+  font-family: Candara, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin-top: 1px;
+  margin-bottom: 1px
+  /*text-transform: uppercase;*/
+  }
+section blockquote{
+  font-size: 13px;
+  padding: 0;
+  color: #777;
+  line-height: 1.8em;
+  margin: 0.2em 0 0 0;
+}
+section p {
+    font-size: 13px;
+    padding: 0;
+    color: #777;
+    line-height: 1.8em;
+    margin: 0.2em 0 0 0;}
+    }
+
+@media (max-width: 320px) {
+  .col-lg-12{
+    padding: 0;
+    margin: 0 auto;
+  }
+  .col-lg-2{
+    padding: 0 2px;
+    width: 45%;
+    height: 200px;
+  }
+  .col-lg-9{
+    padding: 0 2px;
+    width: 55%;
+  }
+    
+  section h2 {
+    font-family: Trebuchet MS, snas-serif;
+    line-height: 1.1;
+    color: #4D3B3B;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 14px;
+    margin-bottom: 6px; }
+  
+    
+  section h4 {
+    font-family: Candara, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    /*text-transform: uppercase;*/
+    }
+  section blockquote{
+    font-size: 12px;
+    padding: 0;
+    color: #777;
+    line-height: 1.7em;
+    margin: 0.1em 0 0 0;
+  }
+  section p {
+      font-size: 12px;
+      padding: 0;
+      color: #777;
+      line-height: 1.7em;
+      margin: 0.1em 0 0 0;}
+}
+/*# sourceMappingURL=style.css.map */
+
+.container > h2{
+  text-align: center;
+  margin: 24px auto;
+}
+
+.indent{
+  text-indent: 36pt;
+}
