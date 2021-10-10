@@ -13,10 +13,10 @@
     counter-reset: paper;
   }
 
-  h4::before{
+  /* h4::before{
     counter-increment: paper;
     content:counter(paper)". ";
-  }
+  } */
 
   blockquote{
     border-left: none;
@@ -171,7 +171,12 @@ section p {
   text-align: center;
   margin: 24px auto;
 }
-
+/* 修改research添加 */
+.container > h3{
+  text-align: center;
+  font-weight: bold;
+  margin: 22px auto;
+}
 .indent{
   text-indent: 36pt;
 }
