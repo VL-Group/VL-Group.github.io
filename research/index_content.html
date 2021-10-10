@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <!-- <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research</title>
+  <meta name="description" content="VLG: Research">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="canonical" href="index.html">
+  <link rel="shortcut icon" type="image/x-icon" href="../images/assests/favicon.ico">
+  <script type="text/javascript">
+    function showPubs(id) {
+    var pubs = document.getElementById('pubs');
+      pubs.classList.toggle('show-by-date', id === 0)
+      pubs.classList.toggle('show-by-topic', id === 1)
+      return true;
+    }
+  </script>
+  <style type="text/css">
+    #pubs .pubs-list {
+        display: none;
+    }
+
+    #pubs.show-by-date .pubs-list.by-date {
+        display: block;
+    }
+
+    #pubs.show-by-topic .pubs-list.by-topic {
+        display: block;
+    }
+  </style>
+</head>
+
+<style>
+    #preview{
+      max-width: 60%;
+      max-height: 60%;
+      box-shadow: 0 0 36px 12px rgba(0, 0, 0, 0.3333333333);
+      object-fit: contain;
+      width: auto;
+      height: auto;
+      display: flex;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+      margin: 0;
+      position: absolute;
+    }
+  </style>
+
+<body>
+<div class="container-fluid" id="to_be_included">
+    <div class="row">
+      <div id="gridid" class="col-sm-12">
+        <center>
+          <h1 id="publications">Selected Publications</h1>
+          <h4><a href="#selected_publications" onclick="showPubs(0); return false;">By date</a>  |
+              <a href="#selected_publications" onclick="showPubs(1)">By topic</a>
+          </h4>
+        </center>
+        <!-- <div class="indent"> -->
+          <!-- <p>Jump to <a href="#2020">2020</a>, <a href="#2019">2019</a>, <a href="#2018">2018</a>, <a href="#2017">2017</a>.</p>
+          <p>Part of our publications, click the links for details</p>
+          <p><a href="https://scholar.google.com/citations?user=F5Zy9V4AAAAJ">Song's Google Scholar</a>
+          </p>
+          <p><a href="https://scholar.google.com/citations?user=zsm2dpYAAAAJ">Gao's Google Scholar</a>
+          </p> -->
+        <!-- </div> -->
+        <div id="pubs" class="show-by-date">
+          <div class="pubs-list by-date">
+            <div class="container">
+            <p>Jump to <a href="#2020">2020</a>, <a href="#2019">2019</a>, <a href="#2018">before 2018</a>
+            <h3 id="2020">2020</h3>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-tnnls-zly.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4 style="color: blue;"><strong>
+                      Rich Visual Knowledge-based Augmentation Network for Visual Question Answering</strong>
+                    </h4>
+                    <p>Liyang Zhang, Shuaicheng Liu, Donghao Liu, Pengpeng Zeng, Xiangpeng Li, 
+                      <strong>Lianli Gao</strong>, Jingkuang Song.</p>
+                    <p style="color: #000079;"><strong>TNNLS</strong> 2020, accepted</p>
+                    <footer class="blockquote-footer">
+                        [pdf], 
+                        [<a href="https://github.com/yyyanglz/KAN">code</a>]
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-eccv-zql.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4 style="color: blue;"><strong>
+                      Patch-wise Attack for Fooling Deep Neural Network</strong>
+                    </h4>
+                    <p><strong>Lianli Gao</strong>, Qilong Zhang, Jingkuan Song, Xianglong Liu, Heng Tao Shen.</p>
+                    <p style="color: #000079;"><strong>ECCV</strong> 2020, accepted</p>
+                      <footer class="blockquote-footer">
+                        [<a href="https://arxiv.org/abs/2007.06765">pdf</a>], [<a
+                          href="https://github.com/qilong-zhang/Patch-wise-iterative-attack">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-sigir-lrm.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      3D Self-Attention for Unsupervised Video Quantization
+                    </h4>
+                    <strong>SIGIR</strong> 2020, accepted
+                    <p>
+                      Jingkuan Song, Ruimin Lang, Xiaosu Zhu, Xing Xu, Lianli Gao and Heng Tao Shen.
+                      <footer class="blockquote-footer">
+                        [pdf], [<a
+                          href="https://github.com/brownwolf/3D-UVQ">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-aaai-ht.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      SNEQ: Semi-supervised Attributed Network Embedding with Attention-based Quantisation
+                    </h4>
+                    <strong>AAAI</strong> 2020, accepted
+                    <p>
+                      Tao He, Lianli Gao, Jingkuan Song, Xin Wang, Kejie Huang, Yufang Li.
+                      <footer class="blockquote-footer">
+                        [<a href="https://www.aaai.org/Papers/AAAI/2020GB/AAAI-HeT.2755.pdf">pdf</a>], [<a
+                          href="https://github.com/ht014/SNEQ">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-ijcai-ht.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      Learning from the Scene and Borrowing from the Rich: Tackling the Long Tail in Scene Graph Generation
+                    </h4>
+                    <strong>IJCAI</strong> 2020, accepted
+                    <p>
+                      Tao He, Lianli Gao, Jingkuan Song, Jianfei Cai , Yuan-Fang Li.
+                      <footer class="blockquote-footer">
+                         [<a href=" https://arxiv.org/abs/2006.07585">pdf</a>], [<a
+                          href="https://github.com/ht014/lsbr">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-ijcai-zzl.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      Bottom-up and Top-down: Bidirectional Additive Net for Edge Detection
+                    </h4>
+                    <strong>IJCAI</strong> 2020, accepted
+                    <p>
+                      Lianli Gao, Zhilong Zhou, Heng Tao Shen, Jingkuan Song.
+                      <footer class="blockquote-footer">
+                        [<a href="https://www.ijcai.org/Proceedings/2020/0083.pdf">pdf</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-ijcv-ht.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      Unified Binary Generative Adversarial Network for Image Retrieval and Compression
+                    </h4>
+                    <strong>IJCV</strong> 2020, accepted
+                    <p>
+                      Jingkuan Song, Tao He, Lianli Gao, Xing Xu, Alan Hanjalic, Heng Tao Shen.
+                      <footer class="blockquote-footer">
+                        [<a href="https://link.springer.com/article/10.1007/s11263-020-01305-2">pdf</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+
+
+            <h3 id="2019">2019</h3>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/MM2019Learnable.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      Learnable Aggregating Net with Divergent Loss for Video Question Answering
+                    </h4>
+                    <strong>ACM MM</strong> 2019, accepted
+                    <p>
+                      Xiangpeng Li, Lianli Gao, Xuanhan Wang, Wu Liu, Xing Xu,Jingkuan Song and Heng Tao Shen.
+                      <footer class="blockquote-footer">
+                        [<a href="https://acmmm.org/accepted-papers/">pdf</a>], [<a
+                          href=" https://github.com/lixiangpengcs/LAD-Net-for-VideoQA">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/MM2019Adaptive.png" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4>
+                      Adaptive Multi-path Aggregation for Dense Human Pose Estimation In The Wild
+                    </h4>
+                    <strong>ACM MM</strong> 2019, accepted
+                    <p>
+                      Yuyu Guo, Lianli Gao, Jingkuan Song, Peng Wang, Wuyuan Xie and Heng Tao Shen.
+                      <footer class="blockquote-footer">
+                        [pdf]
+                        <!--                         [<a href="https://acmmm.org/accepted-papers/">pdf</a>], [<a
+                            href=" https://github.com/lixiangpengcs/LAD-Net-for-VideoQA">code</a>] -->
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2019Recurrent.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Deep Recurrent Quantization for Generating Sequential Binary Codes
+                          </h4>
+                          <strong>IJCAI</strong> 2019, accepted
+                          <p>
+                            Jingkuan Song, Xiaosu Zhu, Lianli Gao, Xin-Shun Xu, Wu Liu, Heng Tao Shen.
+                          </p>
+                          <footer class="blockquote-footer">
+                            [<a href="https://www.ijcai.org/proceedings/2019/0128.pdf">pdf</a>], [<a
+                              href="https://github.com/cfm-uestc/DRQ">code</a>]
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+      
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2019Beyond.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Beyond Product Quantization: Deep Progressive Quantization for Image Retrieval
+                          </h4>
+                          <strong>IJCAI</strong> 2019, accepted
+                          <p>
+                            Lianli Gao, Xiaosu Zhu, Jingkuan Song, Zhou Zhao, Heng Tao Shen</p>
+                          <footer class="blockquote-footer">
+                            [<a href="https://www.ijcai.org/proceedings/2019/0102.pdf">pdf</a>],[<a
+                              href="https://github.com/cfm-uestc/DPQ">code</a>]
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2019Domain.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            One Network for Multi-Domains: Domain Adaptive Hashing with Intersectant Generative Adversarial
+                            Networks
+                          </h4>
+                          <strong>IJCAI</strong> 2019, accepted
+                          <p>
+                            Tao He, Yuan-Fang Li, Lianli Gao, Dongxiang Zhang, Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2019/0344.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2019Open.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Open-Ended Long-Form Video Question Answering via Hierarchical Convolutional Self-Attention
+                            Networks
+                          </h4>
+                          <strong>IJCAI</strong> 2019, accepted
+                          <p>
+                            Zhu Zhang, Zhou Zhao, Zhijie Lin, Jingkuan Song, Xiaofei He.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2019/0609.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2019Localizing.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Localizing Unseen Activities in Video via Image Query
+                          </h4>
+                          <strong>IJCAI</strong> 2019, accepted
+                          <p>
+                            Zhu Zhang, Zhou Zhao, Zhijie Lin, Jingkuan Song, Deng Cai.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2019/0610.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TPAMI2019Hierarchical.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Hierarchical LSTMs with Adaptive Attention for Visual Captioning
+                          </h4>
+                          <strong>TPAMI</strong> 2019, accepted
+                          <p>
+                            Lianli Gao，Xiangpeng Li，Jingkuan Song and Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1812.11004.pdf">pdf</a>], [<a
+                                href="https://github.com/lixiangpengcs/Spatial-Temporal-Adaptive-Attention-for-Video-Captioning">code</a>]
+      
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2019Beyond.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Beyond RNNs: Positional Self-Attention with Co-Attention for Video Question Answering
+                          </h4>
+                          <strong>AAAI</strong> 2019, accepted
+                          <p>
+                            Xiangpeng Li, Jingkuan Song, Lianli Gao, Xianglong Liu, Wenbing Huang, Chuang Gan and Xiangnan He.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.aaai.org/ojs/index.php/AAAI/article/view/4887/4760">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2019Structured.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Structured Two-stream Attention Network for Video Question Answering
+                          </h4>
+                          <strong>AAAI</strong> 2019, accepted
+                          <p>
+                            Lianli Gao, Pengpeng Zeng, Jingkuan Song, YuanFang Li, Wu Liu, Tao Mei and Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/4602/4480">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+      
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2019Perceptual.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Perceptual Pyramid Adversarial Networks for Text-to-Image Synthesis
+                          </h4>
+                          <strong>AAAI</strong> 2019, accepted
+                          <p>
+                            Lianli Gao, Daiyuan Chen, Jingkuan Song, Xing Xu, Dongxiang Zhang and Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/4844/4717">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2019Deliberate.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Deliberate Residual based Attention Network for Image Captioning
+                          </h4>
+                          <strong>AAAI</strong> 2019, accepted
+                          <p>
+                            Lianli Gao, Kaixuan Fan, Jingkuan Song, Xianglong Liu, Xing Xu and Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://aaai.org/ojs/index.php/AAAI/article/view/4845/4718">pdf</a>], [<a
+                                href="https://github.com/fkxssaa/Deliberate-Attention-Networks-for-Image-Captioning">code</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TIP2019Learning.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Learning Match Kernels on Grassmann Manifolds for Action Recognition
+                          </h4>
+                          <strong>TIP</strong> 2019, accepted
+                          <p>
+                            Lei Zhang, Xiantong Zhen, Ling Shao, Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8444452">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-left:10px">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                        <div class="avatar">
+                          <img src="../images/publications/19-14.jpg" class="img-responsive img-thumbnail">
+                        </div>
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote style="margin-bottom:5px">
+                          <h4>
+                            14. Matching Images and Text with Multi-modal Tensor Fusion and Re-ranking
+                          </h4>
+                          <strong>ACM MM</strong> 2019, accepted
+                          <p>
+                            Tan Wang, Xing Xu, Yang Yang, Alan Hanjalic, Heng Tao Shen and Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1908.04011.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row" style="margin-left:10px">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                        <div class="avatar">
+                          <img src="../images/publications/19-14.jpg" class="img-responsive img-thumbnail">
+                        </div>
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote style="margin-bottom:5px">
+                          <h4>
+                            15. Template-Based MathWord Problem Solvers with Recursive Neural Networks
+                          </h4>
+                          <strong>AAAI</strong> 2019, accepted
+                          <p>
+                            Lei Wang,Dongxiang Zhang,Jipeng Zhang,Xing Xu,Lianli Gao,Bingtian Dai and Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1811.05632.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <h3 id="2018">2018</h3>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TNNLS2018From.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            From Deterministic to Generative: Multi-Modal Stochastic RNNs for Video Captioning
+                          </h4>
+                          <strong>TNNLS</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Yuyu Guo, Lianli Gao, Xuelong Li, Alan Hanjalic, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8438512">pdf</a>], [<a
+                                href="https://github.com/gyy8426/MSRNN">code</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/MM2018Examine.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Examine before You Answer: Multi-task Learning with Adaptive-attentions for Multiple-choice VQA
+                          </h4>
+                          <strong>ACM MM</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Pengpeng Zeng, Lianli Gao, Xianglong Liu, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3240687">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/MM2018Cumulative.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Cumulative Nets for Edge Detection
+                          </h4>
+                          <strong>ACM MM</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Zhilong Zhou, Lianli Gao, Xing Xu, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3240688">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/MM2018Pseudo.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Pseudo Transfer with Marginalized Corrupted Attribute for Zero-shot Learning
+                          </h4>
+                          <strong>ACM MM</strong> 2018, accepted
+                          <p>
+                            Teng Long, Xing Xu, YouYou Li, Fumin Shen, Jingkuan Song, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3240715">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/Shaoadd.jpg"
+                          class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Towards Accurate Georeferenced Video Search with Camera Field of View Modeling
+                          </h4>
+                          <strong>TCSVT</strong> 2018, accepted
+                          <p>
+                            Jie Shao, Gang Hu, Jingkuan Song, Xueliang Liu, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8386838">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TIP2018Cross.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Cross-Paced Representation Learning with Partial Curricula for Sketch-based Image Retrieval
+                          </h4>
+                          <strong>TIP</strong> 2018, accepted
+                          <p>
+                            Dan Xu, Alameda-Pineda, Xavier, Jingkuan Song, Ricci Elisa, Nicu Sebe.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8360145">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2018Complementary.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Complementary Binary Quantization for Joint Multiple Indexing
+                          </h4>
+                          <strong>IJCAI</strong> 2018, accepted
+                          <p>
+                            Qiang Fu, Xu Han, Xianglong Liu, Jingkuan Song, Cheng Deng.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2018/0292.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2018From.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            From Pixels to Objects: Cubic Visual Attention for Visual Question Answering
+                          </h4>
+                          <strong>IJCAI</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Pengpeng Zeng, Lianli Gao, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2018/0126.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2018Coarse.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Coarse-to-fine Image Co-segmentation with Intra and Inter Rank Constraints
+                          </h4>
+                          <strong>IJCAI</strong> 2018, accepted
+                          <p>
+                            Lianli Gao, Jingkuan Song, Dongxiang Zhang, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2018/0100.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2018Dual.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Dual Conditional GANs for Face Aging and Rejuvenation
+                          </h4>
+                          <strong>IJCAI</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Jingqiu Zhang, Lianli Gao, Xianglong Liu, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.ijcai.org/proceedings/2018/0125.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TKDE2018NAIS.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            NAIS: Neural Attentive Item Similarity Model for Recommendation
+                          </h4>
+                          <strong>TKDE</strong> 2018, accepted
+                          <p>
+                            Xiangnan He, Zhankui He, Jingkuan Song, Zhenguang Liu, Yu-Gang Jiang, Tat-Seng Chua.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1809.07053.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/ICMR2018Modal.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Modal-adversarial Semantic Learning Network for Extendable Cross-modal Retrieval
+                          </h4>
+                          <strong>ICMR</strong> 2018, accepted
+                          <p>
+                            Xing Xu, Jingkuan Song, Huimin Lu, Yang Yang, Fumin Shen, Zi Huang.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3206033">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/ICMR20183D.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            3D Image-based Indoor Localization Joint With WiFi Positioning
+                          </h4>
+                          <strong>ICMR</strong> 2018, accepted
+                          <p>
+                            Guoyu Lu, Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3206070">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2018Binary.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Binary Generative Adversarial Networks for Image Retrieval
+                          </h4>
+                          <strong>AAAI</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Tao He, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17150/15712">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2018Deep.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Deep Region Hashing for Efficient Large-scale Instance Search from Images
+                          </h4>
+                          <strong>AAAI</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Tao He, Lianli Gao, Xing Xu, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17160/15713">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/AAAI2018Math.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            MathDQN: Solving Arithmetic Word Problems via Deep Reinforcement Learning
+                          </h4>
+                          <strong>AAAI</strong> 2018, accepted
+                          <p>
+                            Lei Wang, Dongxiang Zhang, lianli Gao, Jingkuan Song, Long Guo, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16749/16111">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TIP2018Self.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Self-Supervised Video Hashing with Hierarchical Binary Auto-encoder
+                          </h4>
+                          <strong>TIP</strong> 2018, accepted
+                          <p>
+                            Jingkuan Song, Hanwang Zhang, Xiangpeng Li, Lianli Gao, Meng Wang, Richang Hong.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1802.02305.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TIP2018Deep.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Deep Self-taught Hashing for Image Retrieval
+                          </h4>
+                          <strong>TIP</strong> 2018, accepted
+                          <p>
+                            Yu Liu, Jingkuan Song, Ke Zhou, Linyu Yan, Li Liu, Fuhao Zou, Ling Shao.</p>
+                          <footer class="blockquote-footer">
+                            [<a href="https://core.ac.uk/download/pdf/157817192.pdf">pdf</a>]
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                              <div class="row" style="margin-left:10px">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                        <div class="avatar">
+                          <img src="../images/publications/19.jpg" class="img-responsive img-thumbnail">
+                        </div>
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote style="margin-bottom:5px">
+                          <h4>
+                            19. Binary Generative Adversarial Networks for Image Retrieval
+                          </h4>
+                          <strong>AAAI</strong> 2018, accepted
+                          <p>
+                            Jingkuan  Song, Tao He, Lianli  Gao, Xing Xu, Alan Hanjalic and Heng Tao Shen.</p>
+                          <footer class="blockquote-footer">
+                            [<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/viewFile/17150/15712">pdf</a>]
+                          </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+       
+                  <h3 id="2017">2017</h3>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/ICCV2017Deep.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Deep Binaries: Encoding Semantic-Rich Cues for Efficient Textual-Visual Cross Retrieval
+                          </h4>
+                          <strong>ICCV</strong> 2017, accepted
+                          <p>
+                            Yuming Shen, Li Liu, Ling Shao, Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/abs/1708.02531">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/MM2017Exploring.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Exploring Consistent Preferences: Discrete Hashing with Pair-Exemplar for Scalable Landmark Search
+                          </h4>
+                          <strong>ACM MM</strong> 2017, accepted
+                          <p>
+                            Lei Zhu, Zi Huang, Xiaojun Chang, Jingkuan Song, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3123301">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/MM2017Classification.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Classification by Retrieval: Binarizing Data and Classifier
+                          </h4>
+                          <strong>AAAI</strong> 2017, accepted
+                          <p>
+                            Lianli Gao, Peng Wang, Jingkuan Song, Zi Huang, Jie Shao, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://dl.acm.org/citation.cfm?id=3080767">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/IJCAI2017Hierarchical.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Hierarchical LSTM with Adjusted Temporal Attention for Video Captioning
+                          </h4>
+                          <strong>IJCAI</strong> 2017, accepted
+                          <p>
+                            Jingkuan Song, Zhao Guo, Lianli Gao, Wu Liu, Dongxiang Zhang, Heng Tao Shen
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/abs/1706.01231">pdf</a>], [<a
+                                href="https://github.com/htconquer/ddh">code</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/PR2017Quantization.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Quantization-based hashing: a general framework for scalable image and video retrieval
+                          </h4>
+                          <strong>Pattern Recognition (PR)</strong> 2017, accepted
+                          <p>
+                            Jingkuan Song, Lianli Gao, Xiaofeng Zhu, Nicu Sebe
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.sciencedirect.com/science/article/pii/S0031320317301322">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TPAMI2017Survey.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            A Survey on Learning to Hash
+                          </h4>
+                          <strong>TPAMI</strong> 2017, accepted
+                          <p>
+                            Jingdong Wang, Ting Zhang, Jingkuan Song, Nicu Sebe, Heng Tao Shen.
+                            <footer class="blockquote-footer">
+                              [<a href="https://arxiv.org/pdf/1606.00185.pdf">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TIP2017Bilinear.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Bilinear Optimized Product Quantization for Scalable Visual Content
+                          </h4>
+                          <strong>TIP</strong> 2017, accepted
+                          <p>
+                            Litao Yu, Zi Huang, Fumin Shen, Jingkuan Song, Heng Tao Shen, Xiaofang Zhou.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/document/7964737">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/TKDE2017Local.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Local and Global Structure Preservation for Robust Unsupervised Spectral Feature Selection
+                          </h4>
+                          <strong>TKDE</strong> 2017, accepted
+                          <p>
+                            Xiaofeng Zhu, Shichao Zhang, Yongyao Hu, Yonghua Zhu, Jingkuan Song.
+                            <footer class="blockquote-footer">
+                              [<a href="https://ieeexplore.ieee.org/document/8082527">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div class="col-sm-3 col-md-3 col-lg-2">
+                        <img src="../images/publications/Neuro2017Kernel.png" class="img-responsive img-thumbnail">
+                      </div>
+                      <div class="col-sm-9 col-md-9 col-lg-9">
+                        <blockquote>
+                          <h4>
+                            Kernel based latent semantic sparse hashing for large-scale retrieval from heterogeneous data
+                            sources
+                          </h4>
+                          <strong>Neurocomputing</strong> 2017, accepted
+                          <p>
+                            Xiangpeng Li, Lianli Gao, Xing Xu, Jie Shao, Fumin Shen, Jingkuan Song
+                            <footer class="blockquote-footer">
+                              [<a href="https://www.sciencedirect.com/science/article/pii/S0925231217304538">pdf</a>]
+                            </footer>
+                        </blockquote>
+                      </div>
+                    </div>
+                  </div>
+      
+      
+                                                      <div class="row" style="margin-left:10px">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                                <div class="avatar">
+                                  <img src="../images/publications/10.jpg" class="img-responsive img-thumbnail">
+                                </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                <blockquote style="margin-bottom:5px">
+                                  <h4>
+                                     Video Captioning with Attention-based LSTM and Semantic Consistency
+                                  </h4>
+                                  <strong>TMM</strong> 2017, accepted
+                                  <p>
+                                    Lianli Gao, Zhao Guo, Hanwang Zhang, Xing Xu and Heng Tao Shen
+                                    <footer class="blockquote-footer">
+                                      [<a href="https://www.csd.uoc.gr/~hy474/papers/VideoCaptionig.pdf">pdf</a>]
+                                    </footer>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+      
+                                                                          <div class="row" style="margin-left:10px">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                                <div class="avatar">
+                                  <img src="../images/publications/11.jpg" class="img-responsive img-thumbnail">
+                                </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                <blockquote style="margin-bottom:5px">
+                                  <h4>
+                                     Hierarchical LSTM with Adjusted Temporal Attention for Video Captioning
+                                  </h4>
+                                  <strong>IJCAI</strong> 2017, accepted
+                                  <p>
+                                    Jingkuan Song, Zhao Guo, Lianli Gao, Wu Liu, Dongxiang Zhang and Heng Tao Shen
+                                    <footer class="blockquote-footer">
+                                      [<a href="https://www.ijcai.org/proceedings/2017/0381.pdf">pdf</a>]
+                                    </footer>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+      
+                                                                          <div class="row" style="margin-left:10px">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                                <div class="avatar">
+                                  <img src="../images/publications/12.jpg" class="img-responsive img-thumbnail">
+                                </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                <blockquote style="margin-bottom:5px">
+                                  <h4>
+                                    Matrix Tri-Factorization with Manifold Regularizations for Zero-shot Learning
+                                  </h4>
+                                  <strong>CVPR</strong> 2017, accepted
+                                  <p>
+                                    Xing Xu, Fumin Shen, Yang Yang, Dongxiang Zhang, Jingkuan Song and Heng Tao Shen
+                                    <footer class="blockquote-footer">
+                                      [<a href="http://zpascal.net/cvpr2017/Xu_Matrix_Tri-Factorization_With_CVPR_2017_paper.pdf">pdf</a>]
+                                    </footer>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+      
+      
+                                                                          <div class="row" style="margin-left:10px">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="col-sm-3 col-md-3 col-lg-2" style="padding-left:0px;padding-right:0px">
+                                <div class="avatar">
+                                  <img src="../images/publications/13.jpg" class="img-responsive img-thumbnail">
+                                </div>
+                              </div>
+                              <div class="col-sm-9 col-md-9 col-lg-9">
+                                <blockquote style="margin-bottom:5px">
+                                  <h4>
+                                     Event Video Mashup: From Hundreds of Videos to Minutes of Skeleton
+                                  </h4>
+                                  <strong>AAAI</strong> 2017, accepted
+                                  <p>
+                                    Lianli Gao, Peng Wang, Jingkuan Song, Zi Huang, Jie Shao and Heng Tao Shen
+                                    <footer class="blockquote-footer">
+                                      [<a href="https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/download/14421/13918">pdf</a>]
+                                    </footer>
+                                </blockquote>
+                              </div>
+                            </div>
+                          </div>
+              </div>
+          </div>
+          
+          <div class="pubs-list by-topic">
+            <div class="container">
+            <h3 id="VQA">VQA</h3>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-tnnls-zly.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4 style="color: blue;"><strong>
+                      Rich Visual Knowledge-based Augmentation Network for Visual Question Answering</strong>
+                    </h4>
+                    <p>Liyang Zhang, Shuaicheng Liu, Donghao Liu, Pengpeng Zeng, Xiangpeng Li, 
+                      <strong>Lianli Gao</strong>, Jingkuang Song.</p>
+                    <p style="color: #000079;"><strong>TNNLS</strong> 2020, accepted</p>
+                    <footer class="blockquote-footer">
+                        [pdf], 
+                        [<a href="https://github.com/yyyanglz/KAN">code</a>]
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+            <h3 id="attack">Adversarial Attack</h3>
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-3 col-md-3 col-lg-2">
+                  <img src="../images/publications/20-eccv-zql.jpg" class="img-responsive img-thumbnail">
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <blockquote>
+                    <h4 style="color: blue;"><strong>
+                      Patch-wise Attack for Fooling Deep Neural Network</strong>
+                    </h4>
+                    <p><strong>Lianli Gao</strong>, Qilong Zhang, Jingkuan Song, Xianglong Liu, Heng Tao Shen.</p>
+                    <p style="color: #000079;"><strong>ECCV</strong> 2020, accepted</p>
+                      <footer class="blockquote-footer">
+                        [<a href="https://arxiv.org/abs/2007.06765">pdf</a>], [<a
+                          href="https://github.com/qilong-zhang/Patch-wise-iterative-attack">code</a>]
+                      </footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</body>
